@@ -1,3 +1,4 @@
+
 MG.init = function () {
     MG.fog.init();
     MG.banner.init();
