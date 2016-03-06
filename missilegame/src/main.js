@@ -5,11 +5,11 @@ MG.init = function () {
     MG.game.init();
     MG.hud.init();
 
-    document.addEventListener('touchmove', function(evt){
-            MG.game.onTouchMove(evt.clientX, evt.clientY);
+    document.addEventListener('mousemove', function(evt){
+            MG.game.onMouseMove(evt.clientX, evt.clientY);
         }, false);
 
-    window.addEventListener('touchstart', MG.game.on("swipe",function(), false);
+    window.addEventListener('mousedown', MG.game.onMouseClick, false);
 
     var update = function (dt) {
         MG.fog.update(dt);
