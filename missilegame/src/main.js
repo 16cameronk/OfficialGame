@@ -9,7 +9,7 @@ MG.init = function () {
             MG.game.onTouchMove(evt.clientX, evt.clientY);
         }, false);
 
-    window.addEventListener('touchstart', MG.game.onTouchStar, false);
+    window.addEventListener('touchstart', MG.game.onTouchStart, false);
 
     var update = function (dt) {
         MG.fog.update(dt);
