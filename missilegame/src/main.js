@@ -6,7 +6,7 @@ MG.init = function () {
     MG.hud.init();
 
     document.addEventListener('touchmove', function(evt){
-            MG.game.onMouseMove(evt.clientX, evt.clientY);
+            MG.game.onTouchMove(evt.clientX, evt.clientY);
         }, false);
 
     window.addEventListener('touchstart', MG.game.onMouseClick, false);
